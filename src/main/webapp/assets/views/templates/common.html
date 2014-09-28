@@ -1,0 +1,9 @@
+<div id="server-reply">
+    <h4 ng-if="success || error">
+        Server response:&nbsp; <span class="badge badge-success"
+                                        ng-if="success">{{httpResponse.code}}</span> <span
+            class="badge badge-important" ng-if="error">{{httpResponse.code}}</span>
+    </h4>
+
+    <h4 class="alert alert-error" ng-if="error">{{httpResponse.data}}</h4>
+</div>
